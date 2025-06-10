@@ -1,0 +1,5 @@
+•	Data Exploration and Cleaning: Explores the data, handles missing values in 'TotalCharges', and checks for outliers.
+•	Feature Engineering: Creates new features from existing ones (e.g., tenure in years, engagement status, total services used, payment type) to potentially improve model performance. This includes one-hot encoding some categorical variables.
+•	Base Model Training: Trains several different classification models (Logistic Regression, KNN, Decision Tree, Random Forest, XGBoost, LightGBM, CatBoost) on the initial data and evaluates their performance using cross-validation. Feature importance is calculated for tree-based models.
+•	Feature Scaling and Re-training: Scales numerical features using RobustScaler and retrains the models with the engineered features. Performance is again evaluated and compared to the base models.
+•	Hyperparameter Tuning: Optimizes the hyperparameters of each model using GridSearchCV to further improve performance.
